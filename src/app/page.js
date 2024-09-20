@@ -5,11 +5,11 @@ import ServicesSection from "./components/sections/ServicesSection";
 
 export default function Page() {
   return (
-    <main>
+    <>
       <HeroSection />
       <AboutSection />
       <ServicesSection />
       <ProjectsSection />
-    </main>
+    </>
   );
 }

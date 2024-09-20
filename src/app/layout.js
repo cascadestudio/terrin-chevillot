@@ -1,17 +1,12 @@
-import localFont from "next/font/local";
+import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const nunitoSans = Nunito_Sans({
+  subsets: ["latin"],
+  variable: "--font-nunito-sans",
+  weight: ["200", "300", "400", "600", "700", "900"],
 });
 
 export const metadata = {
@@ -22,11 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${nunitoSans.variable} antialiased font-sans`}>
         <Header />
-        {children}
+        <main className="col-span-7">{children}</main>
         <Footer />
       </body>
     </html>

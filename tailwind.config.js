@@ -10,6 +10,17 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        blue: "#253856",
+        white: "#F4F3EF",
+      },
+      fontFamily: {
+        sans: ["var(--font-nunito-sans)"],
+      },
+      fontSize: {
+        base: "16px",
+      },
+      fontWeight: {
+        base: "600",
       },
     },
   },
