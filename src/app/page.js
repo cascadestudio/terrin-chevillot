@@ -1,7 +1,15 @@
+import AboutSection from "./components/AboutSection";
+import HeroSection from "./components/HeroSection";
+import ProjectsSection from "./components/ProjectsSection";
+import ServicesSection from "./components/ServicesSection";
+
 export default function Page() {
   return (
-    <main className="flex items-center justify-center min-h-screen">
-      Populate me with Sanity Content
+    <main>
+      <HeroSection />
+      <AboutSection />
+      <ServicesSection />
+      <ProjectsSection />
     </main>
   );
 }
