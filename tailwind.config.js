@@ -17,6 +17,8 @@ module.exports = {
         sans: ["var(--font-nunito-sans)"],
       },
       fontSize: {
+        xs: "12px",
+        sm: "14px",
         base: "16px",
       },
       fontWeight: {
