@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <header
       className={`transition-all duration-300 ease-in-out ${
-        isNavOpen ? "h-screen" : "h-16"
+        isNavOpen ? "h-screen" : "h-[68px] lg:h-auto"
       } bg-white border-b border-grey fixed w-full py-3 px-5 lg:px-0 lg:py-7`}
     >
       <div className="container mx-auto grid grid-rows-[auto,1fr] grid-cols-2 lg:grid-cols-7">
