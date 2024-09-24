@@ -11,6 +11,7 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         blue: "#253856",
+        grey: "rgba(61, 76, 100, 0.1)",
         white: "#F4F3EF",
       },
       fontFamily: {
