@@ -8,11 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
         blue: "#253856",
         grey: "rgba(61, 76, 100, 0.1)",
         white: "#F4F3EF",
+      },
+      backgroundImage: {
+        "grid-pattern": `linear-gradient(to right, rgba(61, 76, 100, 0.1) 1px, transparent 1px),
+                         linear-gradient(to bottom, rgba(61, 76, 100, 0.1) 1px, transparent 1px)`,
       },
       fontFamily: {
         sans: ["var(--font-nunito-sans)"],
