@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section className="bg-white min-h-screen">
+    <section className="bg-white">
       <div className="w-full h-[67px] lg:h-[99px]"></div>
       <div className="container relative mx-auto px-5 lg:px-0 grid grid-cols-7 grid-rows-6 bg-grid-pattern bg-[length:calc((100%_-_40px)/7)_16.6667%] lg:bg-[length:14.2857%_16.6667%] bg-[left_1.25rem_top] lg:bg-left-top">
         <div className="absolute top-0 left-0 w-[1px] h-full bg-white"></div>
