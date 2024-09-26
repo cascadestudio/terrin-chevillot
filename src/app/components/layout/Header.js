@@ -70,7 +70,7 @@ export default function Header() {
           </a>
           <a
             href="#"
-            className=" w-full text-center py-2 lg:px-11 bg-blue text-white font-black rounded-3xl uppercase lg:col-start-4"
+            className=" w-full text-center py-2 xl:px-11 bg-blue text-white font-black rounded-3xl uppercase lg:col-start-4"
           >
             Contact
           </a>
