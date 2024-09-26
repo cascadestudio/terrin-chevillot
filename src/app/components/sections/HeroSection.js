@@ -2,16 +2,16 @@ export default function HeroSection() {
   return (
     <section className="bg-white min-h-screen">
       <div className="w-full h-[67px] lg:h-[99px]"></div>
-      <div className="container relative mx-auto px-5 lg:px-0 grid grid-cols-7 lg:auto-rows-[150px] xl:auto-rows-[180px] 2xl:auto-rows-[200px] bg-grid-pattern bg-[length:33.3333%_140px] lg:bg-[length:14.2857%_150px] xl:bg-[length:14.2857%_180px] 2xl:bg-[length:14.2857%_200px]">
+      <div className="container relative mx-auto px-5 lg:px-0 grid grid-cols-7 grid-rows-6 bg-grid-pattern bg-[length:33.3333%_140px] lg:bg-[length:14.2857%_16.6667%]">
         <div className="absolute top-0 left-0 w-[1px] h-full bg-white"></div>
         <div className="col-span-6 row-span-3 bg-blue py-24 lg:py-36 grid grid-cols-subgrid relative -ml-5 pl-5 sm:-ml-[calc(50vw-50%)] sm:pl-[calc(50vw-50%)]">
-          <h1 className="text-white font-black text-[28px] leading-[34px] col-span-5 lg:text-[63px] lg:leading-[70px] lg:col-span-3 lg:col-start-2">
+          <h1 className="text-white font-black text-[28px] leading-[34px] col-span-5 lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px] lg:col-span-3 lg:col-start-2">
             Rénover, étendre, sublimer : votre espace notre mission
           </h1>
           <img
             src="/triangle.svg"
             alt="Triangle"
-            className="absolute bottom-0 left-0 w-[calc((100vw/2.8)-20px)] sm:w-[calc((100vw-640px)/2+640px/2.8)] md:w-[calc((100vw-768px)/2+768px/2.8)] lg:w-[calc((100vw-1024px)/2+1024px/2.8)] xl:w-[calc((100vw-1280px)/2+1280px/2.8)] 2xl:w-[calc((100vw-1536px)/2+1536px/2.8)]"
+            className="absolute bottom-0 left-0 w-[calc((((100vw-40px)/7)*2)+20px)] sm:w-[calc((100vw-640px)/2+660px/2.8)] md:w-[calc((100vw-768px)/2+778px/2.8)] lg:w-[calc((100vw-1024px)/2+1024px/2.8)] xl:w-[calc((100vw-1280px)/2+1280px/2.8)] 2xl:w-[calc((100vw-1536px)/2+1536px/2.8)]"
           />
           <img
             src="/triangle.svg"
@@ -23,17 +23,17 @@ export default function HeroSection() {
           <img
             src="/hero-image.jpg"
             alt="Image chantier"
-            className="w-full max-h-full object-cover"
+            className="w-full h-full max-h-full object-cover"
           />
           <img
             src="/triangle.svg"
             alt="Triangle"
-            className="absolute top-0 right-0 rotate-180 w-[calc((100vw/7)+20px)] sm:w-[calc((100vw-640px)/2+640px/7)] md:w-[calc((100vw-768px)/2+768px/7)] lg:w-[calc((100vw-1024px)/2+1024px/7)] xl:w-[calc((100vw-1280px)/2+1280px/7)] 2xl:w-[calc((100vw-1536px)/2+1536px/7)]"
+            className="absolute top-0 right-0 rotate-180 w-[calc((100vw/7)+15px)] sm:w-[calc((100vw-640px)/2+748px/7)] md:w-[calc((100vw-768px)/2+870px/7)] lg:w-[calc((100vw-1024px)/2+1024px/7)] xl:w-[calc((100vw-1280px)/2+1280px/7)] 2xl:w-[calc((100vw-1536px)/2+1536px/7)]"
           />
           <img
             src="/triangle.svg"
             alt="Triangle"
-            className="absolute bottom-0 left-0 h-[36px] sm:h-[52px] md:h-[62px] lg:h-[88px] xl:h-[109px] 2xl:h-[130px]"
+            className="absolute bottom-0 left-0 w-[calc((100vw-40px)/7)] sm:w-auto sm:h-[52px] md:h-[62px] lg:h-[88px] xl:h-[109px] 2xl:h-[130px]"
           />
         </div>
       </div>
