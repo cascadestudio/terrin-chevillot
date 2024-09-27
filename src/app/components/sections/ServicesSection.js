@@ -38,13 +38,13 @@ export default function ServicesSection() {
   return (
     <section className="bg-blue text-white">
       <div className="container mx-auto px-5 lg:px-0 pt-10 lg:pt-[75px] grid grid-cols-7">
-        <h2 className="col-start-2 col-span-3 mb-8 lg:mb-16 font-black uppercase text-[28px] leading-[34px] lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px]">
+        <h2 className="lg:col-start-2 col-span-3 mb-8 lg:mb-16 font-black uppercase text-[28px] leading-[34px] lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px]">
           Savoir-faire
         </h2>
         {services.map((service, index) => (
           <div
             key={index}
-            className="col-start-2 col-span-6 grid grid-cols-subgrid py-5 border-t border-white"
+            className="lg:col-start-2 col-span-7 lg:col-span-6 grid grid-cols-subgrid py-5 border-t border-white"
           >
             <button
               onClick={() => toggleAccordion(index)}
@@ -52,11 +52,11 @@ export default function ServicesSection() {
             >
               {openAccordionIndex === index ? "-" : "+"}
             </button>
-            <h2 className="col-span-2 font-black text-[28px] leading-[34px] lg:text-[33px] lg:leading-[45px]">
+            <h2 className="col-span-6 lg:col-span-2 whitespace-pre-line font-black text-[22px] leading-[30px] lg:text-[33px] lg:leading-[45px]">
               {service.title}
             </h2>
             <div
-              className={`col-span-3 text-[16px] leading-[22px] lg:text-[22px] lg:leading-[34px] font-bold overflow-hidden transition-[max-height] duration-500 ease-in-out ${
+              className={`col-start-2 col-span-6 lg:col-start-4 lg:col-span-3 whitespace-pre-line text-[16px] leading-[22px] lg:text-[22px] lg:leading-[34px] font-bold overflow-hidden transition-[max-height] duration-500 ease-in-out ${
                 openAccordionIndex === index ? "max-h-[550px]" : "max-h-0"
               }`}
             >

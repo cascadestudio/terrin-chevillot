@@ -47,7 +47,9 @@ export default function Header() {
         </button>
         <nav
           className={`${
-            isNavOpen ? "opacity-100" : "opacity-0 lg:opacity-100"
+            isNavOpen
+              ? "max-h-[500px] opacity-100"
+              : "max-h-0 opacity-0 lg:opacity-100"
           } transition-all duration-300 ease-in-out col-span-2 flex flex-col gap-4 items-center mt-5 lg:mt-0 lg:col-span-4 lg:col-start-4 lg:grid lg:grid-cols-4`}
         >
           <a
