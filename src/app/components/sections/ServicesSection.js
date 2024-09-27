@@ -36,15 +36,17 @@ export default function ServicesSection() {
     },
   ];
   return (
-    <section className="bg-blue text-white">
+    <section className="relative bg-blue text-white pb-32 lg:pb-60">
       <div className="container mx-auto px-5 lg:px-0 pt-10 lg:pt-[75px] grid grid-cols-7">
-        <h2 className="lg:col-start-2 col-span-3 mb-8 lg:mb-16 font-black uppercase text-[28px] leading-[34px] lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px]">
+        <h2 className="lg:col-start-2 col-span-3 mb-8 lg:mb-16  font-black uppercase text-[28px] leading-[34px] lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px]">
           Savoir-faire
         </h2>
         {services.map((service, index) => (
           <div
             key={index}
-            className="lg:col-start-2 col-span-7 lg:col-span-6 grid grid-cols-subgrid py-5 border-t border-white"
+            className={`lg:col-start-2 col-span-7 lg:col-span-6 grid grid-cols-subgrid py-5 border-t border-white ${
+              index === services.length - 1 ? "border-b border-white" : ""
+            }`}
           >
             <button
               onClick={() => toggleAccordion(index)}
@@ -64,6 +66,11 @@ export default function ServicesSection() {
             </div>
           </div>
         ))}
+        <img
+          src="/triangle.svg"
+          alt="Triangle"
+          className="absolute bottom-0 left-0 w-[calc((100vw/7)+15px)] sm:w-[calc((100vw-640px)/2+748px/7)] md:w-[calc((100vw-768px)/2+870px/7)] lg:w-[calc((100vw-1024px)/2+1024px/7)] xl:w-[calc((100vw-1280px)/2+1280px/7)] 2xl:w-[calc((100vw-1536px)/2+1536px/7)]"
+        />
       </div>
     </section>
   );
