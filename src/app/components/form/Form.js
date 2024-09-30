@@ -37,7 +37,10 @@ export default function Form() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mt-4">
+    <form
+      onSubmit={handleSubmit}
+      className="mt-8 lg:mt-0 col-span-7 lg:col-start-5 lg:col-span-3"
+    >
       <input
         type="text"
         placeholder="First Name"
