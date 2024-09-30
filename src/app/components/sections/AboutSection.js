@@ -1,8 +1,8 @@
 export default function AboutSection() {
   return (
     <section className=" bg-white">
-      <div className="container mx-auto px-5 lg:px-0 grid grid-cols-7 grid-rows-6 bg-grid-pattern bg-[length:calc((100%_-_40px)/7)_16.6667%] lg:bg-[length:14.2857%_16.6667%] bg-[left_1.25rem_top] lg:bg-left-top">
-        <div className="relative col-span-7 lg:col-span-3 row-start-2 row-span-3 lg:-ml-[calc((100vw-1024px)/2)] xl:-ml-[calc((100vw-1280px)/2)] 2xl:-ml-[calc((100vw-1536px)/2)]">
+      <div className="container mx-auto px-5 lg:px-0 grid grid-cols-7 grid-rows-6 lg:bg-grid-pattern bg-[length:calc((100%_-_40px)/7)_16.6667%] lg:bg-[length:14.2857%_16.6667%] bg-[left_1.25rem_top] lg:bg-left-top">
+        <div className="relative col-span-7 lg:col-span-3 lg:row-start-2 row-span-3 lg:-ml-[calc((100vw-1024px)/2)] xl:-ml-[calc((100vw-1280px)/2)] 2xl:-ml-[calc((100vw-1536px)/2)]">
           <img
             src="/about-image.jpg"
             alt="Chantier"
@@ -19,7 +19,7 @@ export default function AboutSection() {
             className="absolute bottom-0 left-0 w-[calc((100vw/7)+15px)] sm:w-[calc((100vw-640px)/2+748px/7)] md:w-[calc((100vw-768px)/2+870px/7)] lg:w-[calc((100vw-1024px)/2+1024px/7)] xl:w-[calc((100vw-1280px)/2+1280px/7)] 2xl:w-[calc((100vw-1536px)/2+1536px/7)]"
           />
         </div>
-        <div className="col-span-7 lg:col-span-4 row-span-2 lg:row-start-3 py-4 lg:py-7 lg:px-10 bg-white border-t border-grey">
+        <div className="col-span-7 lg:col-span-4 row-span-2 row-start-1 lg:row-start-3 py-4 lg:py-7 lg:px-10 bg-white border-t border-grey">
           <h2 className="text-blue uppercase font-black text-[28px] leading-[34px] lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px]">
             Notre vision
           </h2>
