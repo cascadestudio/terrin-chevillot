@@ -31,12 +31,12 @@ export default async function ProjectsSection() {
           travail de qualité.
         </p>
 
-        <div className="lg:row-start-3 col-span-full row-span-7 grid grid-cols-subgrid grid-rows-subgrid gap-4">
+        <div className="lg:row-start-3 col-span-full row-span-7 grid grid-cols-subgrid lg:grid-rows-subgrid gap-4">
           {projects.map((project, index) => (
             <div
               key={project._id}
               className={`
-            col-span-7 lg:col-span-3 lg:row-span-3
+            col-span-7 row-span-3 lg:col-span-3
             ${index === 0 ? "lg:col-start-1 lg:row-start-1" : ""}
             ${index === 1 ? "lg:col-start-5 lg:row-start-2" : ""}
             ${index === 2 ? "lg:col-start-2 lg:row-start-5" : ""}
