@@ -42,8 +42,11 @@ export default function Footer() {
           </a>
         </div>
         <Form />
-        <div className="col-span-7 lg:col-start-2 flex flex-col gap-5 lg:gap-11">
-          <img src="/logo.svg" alt="Logo" />
+        <div className="col-span-7 lg:col-start-2 grid grid-cols-subgrid">
+          <img src="/logo-blanc.svg" alt="Logo" className="h-[100px]" />
+          <p>© TC Bâtiment 2024</p>
+          <a href="#">Mentions légales</a>
+          <p className="col-start-7">Site réalisé par le Studio Cascade</p>
         </div>
       </div>
     </footer>
