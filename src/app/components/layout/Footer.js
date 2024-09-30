@@ -42,6 +42,9 @@ export default function Footer() {
           </a>
         </div>
         <Form />
+        <div className="col-span-7 lg:col-start-2 flex flex-col gap-5 lg:gap-11">
+          <img src="/logo.svg" alt="Logo" />
+        </div>
       </div>
     </footer>
   );
