@@ -2,7 +2,7 @@ import Form from "../form/Form";
 
 export default function Footer() {
   return (
-    <footer className="py-8 bg-blue text-white">
+    <footer id="contact" className="py-8 bg-blue text-white">
       <div className="container mx-auto px-5 lg:px-0 grid grid-cols-7">
         <div className="col-span-7 lg:col-start-2 lg:col-span-2 flex flex-col gap-5 lg:gap-11">
           <h2 className="font-black uppercase text-[28px] leading-[34px] lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px]">

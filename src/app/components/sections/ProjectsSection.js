@@ -17,7 +17,7 @@ export default async function ProjectsSection() {
   const projects = await client.fetch(query);
 
   return (
-    <section className="bg-white text-blue">
+    <section id="projects" className="bg-white text-blue">
       <div className="relative container mx-auto px-5 lg:px-0 pb-10 lg:pb-0 grid grid-cols-7 grid-rows-11 lg:grid-rows-10 lg:bg-grid-pattern bg-[length:calc((100%_-_40px)/7)_10%] lg:bg-[length:14.2857%_10%] bg-[left_1.25rem_top] lg:bg-left-top">
         <div className="absolute top-0 left-0 w-[1px] h-full bg-white"></div>
         <h2 className="bg-white pt-5 lg:pt-8 border-t border-grey h-full row-start-2 col-span-full lg:col-span-3 font-black uppercase text-[28px] leading-[34px] lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px]">

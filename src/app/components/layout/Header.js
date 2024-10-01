@@ -22,7 +22,9 @@ export default function Header() {
       } bg-white border-b border-grey fixed w-full py-3 px-5 z-10 lg:px-0 lg:py-7`}
     >
       <div className="container mx-auto grid grid-rows-[auto,1fr] grid-cols-2 lg:grid-cols-7">
-        <img src="/logo.svg" alt="Logo" className="h-11" />
+        <a href="#haut">
+          <img src="/logo.svg" alt="Logo" className="h-11" />
+        </a>
         <button
           className="col-start-2 justify-self-end lg:hidden focus:outline-none"
           onClick={toggleNav}
@@ -53,25 +55,25 @@ export default function Header() {
           } transition-all duration-300 ease-in-out col-span-2 flex flex-col gap-4 items-center mt-5 lg:mt-0 lg:col-span-4 lg:col-start-4 lg:grid lg:grid-cols-4`}
         >
           <a
-            href="#"
+            href="#vision"
             className=" text-blue font-black uppercase lg:col-start-1"
           >
             Notre vision
           </a>
           <a
-            href="#"
+            href="#services"
             className=" text-blue font-black uppercase lg:col-start-2"
           >
             Savoir-faire
           </a>
           <a
-            href="#"
+            href="#projects"
             className=" text-blue font-black uppercase lg:col-start-3"
           >
             Réalisations
           </a>
           <a
-            href="#"
+            href="#contact"
             className=" w-full text-center py-2 xl:px-11 bg-blue text-white font-black rounded-3xl uppercase lg:col-start-4"
           >
             Contact

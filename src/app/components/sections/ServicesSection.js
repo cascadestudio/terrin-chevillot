@@ -36,7 +36,10 @@ export default function ServicesSection() {
     },
   ];
   return (
-    <section className="relative bg-blue text-white pb-32 lg:pb-60">
+    <section
+      id="services"
+      className="relative bg-blue text-white pb-32 lg:pb-60"
+    >
       <div className="container mx-auto px-5 lg:px-0 pt-10 lg:pt-[75px] grid grid-cols-7">
         <h2 className="lg:col-start-2 col-span-3 mb-8 lg:mb-16  font-black uppercase text-[28px] leading-[34px] lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px]">
           Savoir-faire
