@@ -42,11 +42,27 @@ export default function Footer() {
           </a>
         </div>
         <Form />
-        <div className="col-span-7 lg:col-start-2 grid grid-cols-subgrid">
-          <img src="/logo-blanc.svg" alt="Logo" className="h-[100px]" />
-          <p>© TC Bâtiment 2024</p>
-          <a href="#">Mentions légales</a>
-          <p className="col-start-7">Site réalisé par le Studio Cascade</p>
+        <div className="col-span-7 lg:col-start-2 grid grid-cols-subgrid gap-y-3 items-end font-normal text-[11px] lg:text-[13px] mt-20 lg:mt-32">
+          <img
+            src="/logo-blanc.svg"
+            alt="Logo"
+            className="h-[22px] col-span-4 lg:col-span-1"
+          />
+          <p className="col-start-1 col-span-3 row-start-2 self-start whitespace-nowrap lg:self-end lg:col-start-2 lg:row-start-1 lg:col-span-1">
+            © TC Bâtiment 2024
+          </p>
+          <a
+            className="col-start-5 col-span-3 row-start-1 justify-self-end lg:col-start-3 lg:justify-self-start lg:col-span-1"
+            href="#"
+          >
+            Mentions légales
+          </a>
+          <p className="col-span-4 justify-self-end lg:justify-self-start lg:col-span-1 lg:col-start-7">
+            Site réalisé par le{" "}
+            <a href="https://www.cascadestudio.fr" className="hover:underline">
+              Studio Cascade
+            </a>
+          </p>
         </div>
       </div>
     </footer>

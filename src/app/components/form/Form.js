@@ -125,7 +125,7 @@ export default function Form() {
       <button
         type="submit"
         disabled={loading}
-        className={`p-2 text-blue uppercase font-black rounded-[30px] w-1/3 ${
+        className={`p-2 text-blue uppercase font-black rounded-[30px] w-full lg:w-1/3 ${
           loading ? "bg-gray-400" : "bg-white"
         }`}
       >
