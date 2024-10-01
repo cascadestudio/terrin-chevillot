@@ -57,7 +57,7 @@ export default function Footer() {
           >
             Mentions légales
           </a>
-          <p className="col-span-4 justify-self-end lg:justify-self-start lg:col-span-1 lg:col-start-7">
+          <p className="col-span-4 justify-self-end whitespace-nowrap lg:col-span-2 lg:col-start-6">
             Site réalisé par le{" "}
             <a href="https://www.cascadestudio.fr" className="hover:underline">
               Studio Cascade
