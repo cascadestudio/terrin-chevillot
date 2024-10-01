@@ -119,7 +119,7 @@ export default function Form() {
         placeholder="Dites-nous en plus"
         value={formData.message}
         onChange={handleChange}
-        className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-gray-400 focus:outline-none"
+        className="w-full h-32 lg:h-48 p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-gray-400 focus:outline-none"
         required
       />
       <button
