@@ -11,12 +11,12 @@ export default function AboutSection() {
           <img
             src="/triangle.svg"
             alt="Triangle"
-            className="absolute top-0 right-0 rotate-180 w-[calc((100vw-40px)/7)] sm:w-auto h-[18px] md:h-[26px] lg:h-[44px] xl:h-[55px] 2xl:h-[65px]"
+            className="absolute top-0 right-[-1px] rotate-180 h-[18px] md:h-[26px] lg:h-[44px] xl:h-[55px] 2xl:h-[65px]"
           />
           <img
             src="/triangle.svg"
             alt="Triangle"
-            className="absolute bottom-0 left-0 w-[calc((100vw/7)+15px)] sm:w-[calc((100vw-640px)/2+748px/7)] md:w-[calc((100vw-768px)/2+870px/7)] lg:w-[calc((100vw-1024px)/2+1024px/7)] xl:w-[calc((100vw-1280px)/2+1280px/7)] 2xl:w-[calc((100vw-1536px)/2+1536px/7)]"
+            className="absolute bottom-[-1px] left-[-1px] w-[calc((100vw/7)+15px)] sm:w-[calc((100vw-640px)/2+748px/7)] md:w-[calc((100vw-768px)/2+870px/7)] lg:w-[calc((100vw-1024px)/2+1024px/7)] xl:w-[calc((100vw-1280px)/2+1280px/7)] 2xl:w-[calc((100vw-1536px)/2+1536px/7)]"
           />
         </div>
         <div className="col-span-7 lg:col-span-4 row-span-2 row-start-1 lg:row-start-3 py-4 lg:py-7 lg:px-10 bg-white border-t border-grey">

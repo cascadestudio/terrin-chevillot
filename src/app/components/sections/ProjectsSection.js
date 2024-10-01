@@ -40,13 +40,25 @@ export default async function ProjectsSection() {
             ${index === 2 ? "lg:col-start-2 lg:row-start-5" : ""}
           `}
             >
-              <img
-                src={project.imageUrl}
-                alt={project.mainImage?.alt}
-                className="w-full h-full row-span-2 lg:h-2/3 object-cover"
-              />
-              <div className="row-span-1 border-b border-grey lg:border-none">
-                <h3 className="mt-2 lg:mt-4 text-[16px] lg:text-[22px] font-black">
+              <div className="relative w-full h-full row-span-2 lg:h-2/3">
+                <img
+                  src={project.imageUrl}
+                  alt={project.mainImage?.alt}
+                  className="w-full h-full object-cover"
+                />
+                <img
+                  src="/triangle-project.svg"
+                  alt="Triangle"
+                  className="absolute top-0 left-[-1px] h-[9px] md:h-[13px] lg:h-[22px] xl:h-[27px] 2xl:h-[32px]"
+                />
+                <img
+                  src="/triangle-project.svg"
+                  alt="Triangle"
+                  className="absolute bottom-0 right-[-1px] h-[9px] md:h-[13px] lg:h-[22px] xl:h-[27px] 2xl:h-[32px] transform scale-x-[-1] scale-y-[-1]"
+                />
+              </div>
+              <div className="pt-2 lg:pt-4 row-span-1 bg-white h-full lg:h-1/3 border-b border-grey lg:border-none">
+                <h3 className=" text-[16px] lg:text-[22px] font-black">
                   {project.title}
                 </h3>
                 <p className="mt-2 text-[12px] lg:text-[16px] font-bold">

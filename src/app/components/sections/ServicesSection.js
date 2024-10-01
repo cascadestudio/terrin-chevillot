@@ -10,7 +10,7 @@ export default function ServicesSection() {
 
   const services = [
     {
-      title: "Construction\net Rénovation",
+      title: "Construction et Rénovation",
       content:
         "La mise en œuvre de votre chantier est assurée par une équipe d’experts réactifs et professionnels. Que ce soit pour des extensions, des rénovations ou une construction neuve nous utilisons les meilleurs matériaux et allions techniques traditionnelles et innovantes pour une réalisation parfaite.\nNous bâtissons durablement et éthiquement, dans les règles de l’artdepuis plus de 20 ans.",
     },
@@ -42,18 +42,16 @@ export default function ServicesSection() {
           Savoir-faire
         </h2>
         {services.map((service, index) => (
-          <div
+          <button
             key={index}
-            className={`lg:col-start-2 col-span-7 lg:col-span-6 grid grid-cols-subgrid py-5 border-t border-white ${
+            className={`lg:col-start-2 col-span-7 lg:col-span-6 grid grid-cols-subgrid py-5 border-t border-white text-left  ${
               index === services.length - 1 ? "border-b border-white" : ""
             }`}
+            onClick={() => toggleAccordion(index)}
           >
-            <button
-              onClick={() => toggleAccordion(index)}
-              className="self-start font-black text-center text-[28px] leading-[34px] lg:text-[48px] lg:leading-[55px]"
-            >
+            <div className="self-start font-black text-center text-[28px] leading-[34px] lg:text-[48px] lg:leading-[55px]">
               {openAccordionIndex === index ? "-" : "+"}
-            </button>
+            </div>
             <h2 className="col-span-6 lg:col-span-2 whitespace-pre-line font-black text-[22px] leading-[30px] lg:text-[33px] lg:leading-[45px]">
               {service.title}
             </h2>
@@ -64,12 +62,12 @@ export default function ServicesSection() {
             >
               <p>{service.content}</p>
             </div>
-          </div>
+          </button>
         ))}
         <img
           src="/blue-triangle.svg"
           alt="Triangle"
-          className="absolute top-0 right-0 transform -translate-y-full w-[calc((100vw/7)+15px)] sm:w-[calc((100vw-640px)/2+748px/7)] md:w-[calc((100vw-768px)/2+870px/7)] lg:w-[calc((100vw-1024px)/2+1024px/7)] xl:w-[calc((100vw-1280px)/2+1280px/7)] 2xl:w-[calc((100vw-1536px)/2+1536px/7)]"
+          className="absolute top-[1px] right-0 transform -translate-y-full w-[calc((100vw/7)+15px)] sm:w-[calc((100vw-640px)/2+748px/7)] md:w-[calc((100vw-768px)/2+870px/7)] lg:w-[calc((100vw-1024px)/2+1024px/7)] xl:w-[calc((100vw-1280px)/2+1280px/7)] 2xl:w-[calc((100vw-1536px)/2+1536px/7)]"
         />
         <img
           src="/triangle.svg"
