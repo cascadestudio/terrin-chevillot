@@ -12,17 +12,17 @@ export default function ServicesSection() {
     {
       title: "Construction et Rénovation",
       content:
-        "La mise en œuvre de votre chantier est assurée par une équipe d’experts réactifs et professionnels. Que ce soit pour des extensions, des rénovations ou une construction neuve nous utilisons les meilleurs matériaux et allions techniques traditionnelles et innovantes pour une réalisation parfaite.\nNous bâtissons durablement et éthiquement, dans les règles de l’artdepuis plus de 20 ans.",
+        "La mise en œuvre de votre chantier est assurée par une équipe d’experts réactifs et professionnels. Que ce soit pour des extensions, des rénovations ou une construction neuve nous utilisons les meilleurs matériaux et allions techniques traditionnelles et innovantes pour une réalisation parfaite.\nNous bâtissons durablement et éthiquement, dans les règles de l’art depuis plus de 20 ans.",
     },
     {
       title: "Typologie",
       content:
-        "Vous souhaitiez rafraîchir votre maison, donner un coup de neuf à votre commerce ou redonner vie à un espace public, nous sommes là pour vous accompagner.\nGrâce à notre vaste expérience avec les architectes et les bureaux d’études, nous suivons les plans à la lettre. Notre équipe hautement qualifier est là pour vous écouter et vous conseiller à chaque étape.",
+        "Vous souhaitez rafraîchir votre maison, donner un coup de neuf à votre commerce ou redonner vie à un espace public, nous sommes là pour vous accompagner.\nGrâce à notre vaste expérience avec les architectes et les bureaux d’études, nous suivons les plans à la lettre. Notre équipe hautement qualifiée est là pour vous écouter et vous conseiller à chaque étape.",
     },
     {
       title: "Coordination",
       content:
-        "Notre équipe assure une coordination fluide entre les différents corps de métier. La coordination est cruciale pour le bon dérou- lement d’un chantier, et grâce à notre expérience, nous nous adaptons parfaitement, même aux délais les plus ambitieux.",
+        "Notre équipe assure une coordination fluide entre les différents corps de métier. La coordination est cruciale pour le bon déroulement d’un chantier, et grâce à notre expérience, nous nous adaptons parfaitement, même aux délais les plus ambitieux.",
     },
     {
       title: "Particulier",
