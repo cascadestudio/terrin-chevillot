@@ -1,9 +1,13 @@
 import { ProjectsIcon } from "@sanity/icons";
 import { defineField, defineType } from "sanity";
+import {
+  orderRankField,
+  orderRankOrdering,
+} from "@sanity/orderable-document-list";
 
 export const projectType = defineType({
   name: "project",
-  title: "Projet",
+  title: "Projets",
   type: "document",
   icon: ProjectsIcon,
   fields: [
@@ -27,22 +31,21 @@ export const projectType = defineType({
         hotspot: true,
       },
       validation: (Rule) => Rule.required(),
-      fields: [
-        {
-          name: "alt",
-          type: "string",
-          title: "Alternative text",
-          validation: (Rule) => Rule.required(),
-        },
-      ],
     }),
     defineField({
       name: "description",
       title: "Description",
       type: "text",
-      validation: (Rule) => Rule.required(),
+      validation: (Rule) =>
+        Rule.required()
+          .max(250)
+          .warning(
+            "La description dépasse 250 caractères et risque d'impacter négativement l'expérience utilisateur."
+          ),
     }),
+    orderRankField({ type: "project", newItemPosition: "before" }),
   ],
+  orderings: [orderRankOrdering],
   preview: {
     select: {
       title: "title",
