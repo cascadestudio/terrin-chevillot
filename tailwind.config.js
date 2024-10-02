@@ -17,7 +17,7 @@ module.exports = {
                          linear-gradient(to bottom, rgba(61, 76, 100, 0.1) 1px, transparent 1px)`,
       },
       fontFamily: {
-        sans: ["var(--font-nunito-sans)"],
+        sans: ["var(--font-nunito-sans)", "sans-serif"],
       },
       fontSize: {
         xs: "12px",
