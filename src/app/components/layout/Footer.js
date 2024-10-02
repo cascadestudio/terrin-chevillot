@@ -3,7 +3,10 @@ import Form from "../form/Form";
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
-    <footer id="contact" className="relative py-8 bg-blue text-white">
+    <footer
+      id="contact"
+      className="relative pt-16 lg:pt-8 py-8 bg-blue text-white"
+    >
       <img
         src="/triangle.svg"
         alt="Triangle"

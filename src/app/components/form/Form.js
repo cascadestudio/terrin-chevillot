@@ -18,7 +18,7 @@ export default function Form() {
     if (success) {
       const timer = setTimeout(() => {
         setSuccess(false);
-      }, 10000);
+      }, 7000);
 
       return () => clearTimeout(timer);
     }
@@ -135,11 +135,11 @@ export default function Form() {
       <button
         type="submit"
         disabled={loading || success}
-        className={`p-2 text-blue uppercase whitespace-nowrap font-black rounded-[30px] w-full lg:w-1/3 ${
+        className={`p-2 text-blue hover:text-white hover:bg-blue hover:transition hover:duration-300 hover:ease-in-out uppercase whitespace-nowrap font-black rounded-[30px] w-full lg:w-1/3 ${
           loading
-            ? "bg-gray-400"
+            ? "bg-gray-400 text-white hover:text-white hover:bg-gray-400 "
             : success
-              ? "bg-green-600 text-white"
+              ? "bg-green-600 hover:bg-green-600 text-white"
               : "bg-white"
         }`}
       >

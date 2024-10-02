@@ -56,25 +56,29 @@ export default function Header() {
         >
           <a
             href="#vision"
+            onClick={() => setNavOpen(false)}
             className=" text-blue font-black uppercase lg:col-start-1"
           >
             Notre vision
           </a>
           <a
             href="#services"
+            onClick={() => setNavOpen(false)}
             className=" text-blue font-black uppercase lg:col-start-2"
           >
             Savoir-faire
           </a>
           <a
             href="#projects"
+            onClick={() => setNavOpen(false)}
             className=" text-blue font-black uppercase lg:col-start-3"
           >
             Réalisations
           </a>
           <a
             href="#contact"
-            className=" w-full text-center py-2 xl:px-11 bg-blue text-white font-black rounded-3xl uppercase lg:col-start-4"
+            onClick={() => setNavOpen(false)}
+            className=" w-full text-center py-2 xl:px-11  bg-blue text-white font-black rounded-3xl uppercase lg:col-start-4 hover:text-blue hover:bg-white hover:transition hover:duration-300 hover:ease-in-out"
           >
             Contact
           </a>
