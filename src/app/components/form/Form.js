@@ -76,7 +76,7 @@ export default function Form() {
         placeholder="Nom"
         value={formData.username}
         onChange={handleChange}
-        className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-gray-400 focus:outline-none"
+        className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-white focus:outline-none"
         required
       />
       <input
@@ -85,7 +85,7 @@ export default function Form() {
         placeholder="Adresse e-mail"
         value={formData.email}
         onChange={handleChange}
-        className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-gray-400 focus:outline-none"
+        className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-white focus:outline-none"
         required
       />
       <input
@@ -94,13 +94,13 @@ export default function Form() {
         placeholder="Numéro de téléphone (optionnel)"
         value={formData.phone}
         onChange={handleChange}
-        className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-gray-400 focus:outline-none"
+        className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-white focus:outline-none"
       />
       <select
         name="projectType"
         value={formData.projectType}
         onChange={handleChange}
-        className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-gray-400 focus:outline-none"
+        className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-white focus:outline-none"
         required
       >
         <option value="" disabled>
