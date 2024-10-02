@@ -2,7 +2,12 @@ import Form from "../form/Form";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="py-8 bg-blue text-white">
+    <footer id="contact" className="relative py-8 bg-blue text-white">
+      <img
+        src="/triangle.svg"
+        alt="Triangle"
+        className="absolute top-[-1px] left-0 scale-y-[-1] w-[calc((100vw/7)+15px)] sm:w-[calc((100vw-640px)/2+748px/7)] md:w-[calc((100vw-768px)/2+870px/7)] lg:w-[calc((100vw-1024px)/2+1024px/7)] xl:w-[calc((100vw-1280px)/2+1280px/7)] 2xl:w-[calc((100vw-1536px)/2+1536px/7)]"
+      />
       <div className="container mx-auto px-5 lg:px-0 grid grid-cols-7">
         <div className="col-span-7 lg:col-start-2 lg:col-span-2 flex flex-col gap-5 lg:gap-11">
           <h2 className="font-black uppercase text-[28px] leading-[34px] lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px]">
@@ -52,7 +57,7 @@ export default function Footer() {
             © TC Bâtiment 2024
           </p>
           <a
-            className="col-start-5 col-span-3 row-start-1 justify-self-end lg:col-start-3 lg:justify-self-start lg:col-span-1"
+            className="col-start-5 hover:underline col-span-3 row-start-1 justify-self-end lg:col-start-3 lg:justify-self-start lg:col-span-1"
             href="#"
           >
             Mentions légales

@@ -20,7 +20,7 @@ export default function AboutSection() {
           />
         </div>
         <div className="col-span-7 lg:col-span-4 row-span-2 row-start-1 lg:row-start-3 py-4 lg:py-7 lg:px-10 bg-white border-t border-grey">
-          <h2 className="text-blue uppercase font-black text-[28px] leading-[34px] lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px]">
+          <h2 className="text-blue uppercase font-black text-[28px] leading-[34px] mt-7 lg:mt-0 lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px]">
             Notre vision
           </h2>
           <p className="mt-4 text-blue text-[16px] lg:text-[22px] font-bold">
