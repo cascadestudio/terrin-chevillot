@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Form() {
   const [formData, setFormData] = useState({
@@ -13,6 +13,16 @@ export default function Form() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    if (success) {
+      const timer = setTimeout(() => {
+        setSuccess(false);
+      }, 10000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [success]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -96,9 +106,9 @@ export default function Form() {
         <option value="" disabled>
           Sélectionnez le type de projet
         </option>
-        <option value="construction">Construction</option>
-        <option value="renovation">Rénovation</option>
-        <option value="other">Autre</option>
+        <option value="Construction">Construction</option>
+        <option value="Rénovation">Rénovation</option>
+        <option value="Autre">Autre</option>
       </select>
       <select
         name="budget"
@@ -110,9 +120,9 @@ export default function Form() {
         <option value="" disabled>
           Sélectionnez une fourchette de budget
         </option>
-        <option value="low">Moins de 10 000 €</option>
-        <option value="medium">10 000 € - 50 000 €</option>
-        <option value="high">Plus de 50 000 €</option>
+        <option value="<10k€">Moins de 10 000 €</option>
+        <option value="10k€-50k€">10 000 € - 50 000 €</option>
+        <option value=">50k€">Plus de 50 000 €</option>
       </select>
       <textarea
         name="message"
@@ -124,17 +134,19 @@ export default function Form() {
       />
       <button
         type="submit"
-        disabled={loading}
-        className={`p-2 text-blue uppercase font-black rounded-[30px] w-full lg:w-1/3 ${
-          loading ? "bg-gray-400" : "bg-white"
+        disabled={loading || success}
+        className={`p-2 text-blue uppercase whitespace-nowrap font-black rounded-[30px] w-full lg:w-1/3 ${
+          loading
+            ? "bg-gray-400"
+            : success
+              ? "bg-green-600 text-white"
+              : "bg-white"
         }`}
       >
-        {loading ? "En cours d'envoi..." : "Envoyer"}
+        {loading ? "En cours d'envoi" : success ? "Message envoyé" : "Envoyer"}
       </button>
+
       {error && <p className="mt-4 text-red-500">{error}</p>}
-      {success && (
-        <p className="mt-4 text-green-500">Votre message a bien été envoyé !</p>
-      )}
     </form>
   );
 }

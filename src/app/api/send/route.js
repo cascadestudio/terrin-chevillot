@@ -10,7 +10,7 @@ export async function POST(req) {
 
     const { data, error } = await resend.emails.send({
       from: "Acme <onboarding@resend.dev>", // TODO: update with the client's address
-      to: ["contact@cascadestudio.fr"],
+      to: ["contact@cascadestudio.fr"], // TODO: update with the client's address
       subject: `Nouvelle demande de devis sur votre site : ${username}`,
       react: EmailTemplate({
         username,

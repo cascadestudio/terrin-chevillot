@@ -1,11 +1,21 @@
 import React from "react";
 
-// A simple email template component that takes props
-export const EmailTemplate = ({ firstName }) => {
+export const EmailTemplate = ({
+  username,
+  email,
+  phone,
+  projectType,
+  budget,
+  message,
+}) => {
   return (
     <div>
-      <h1>Welcome, {firstName}!</h1>
-      <p>We’re excited to have you onboard.</p>
+      <p>Nom : {username}</p>
+      <p>Email : {email}</p>
+      <p>Téléphone : {phone}</p>
+      <p>Type de projet : {projectType}</p>
+      <p>Budget : {budget}</p>
+      <p>Message : {message}</p>
     </div>
   );
 };
