@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="relative pt-16 lg:pt-8 py-8 bg-blue text-white"
+      className="relative pt-16 lg:pt-24 pb-2 bg-blue text-white"
     >
       <img
         src="/triangle.svg"
