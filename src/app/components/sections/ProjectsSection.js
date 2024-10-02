@@ -2,7 +2,7 @@ import { client } from "@/sanity/lib/client";
 
 export default async function ProjectsSection() {
   const query = `
-  *[_type == "project"] | order(orderRank desc)[0...4] {
+  *[_type == "project"] | order(orderRank asc)[0...4] {
     _id,
     title,
     slug,
