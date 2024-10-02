@@ -7,9 +7,7 @@ import {
 
 export const projectType = defineType({
   name: "project",
-  title: "Projets",
-  description:
-    "L'ordre des projets est modifiable et correspond à celui du site. Pour une expérience utilisateur optimale, seuls les 4 premiers projets seront affichés.",
+  title: "Projets - Seuls les 4 premiers seront affichés sur le site",
   type: "document",
   icon: ProjectsIcon,
   fields: [

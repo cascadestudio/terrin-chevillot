@@ -13,6 +13,9 @@ export default defineConfig({
   projectId,
   dataset,
   schema,
+  scheduledPublishing: {
+    enabled: false, // Disables the "Schedules" tab
+  },
   plugins: [
     structureTool({
       structure: (S, context) => {
