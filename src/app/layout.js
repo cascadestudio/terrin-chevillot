@@ -10,7 +10,23 @@ const nunitoSans = Nunito_Sans({
 
 export const metadata = {
   title: "Terrin & Chevillot",
-  description: "Terrin & Chevillot Bâtiments",
+  description:
+    "Terrin & Chevillot Bâtiments - Experts en construction et rénovation.",
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    url: "https://www.terrin-chevillot.com",
+    title: "Terrin & Chevillot - Bâtiments",
+    description: "Découvrez nos services de construction et rénovation.",
+    images: [
+      {
+        url: "https://www.terrin-chevillot.com/hero-image.jpg",
+        width: 1008,
+        height: 617,
+        alt: "Terrin & Chevillot Bâtiments",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
