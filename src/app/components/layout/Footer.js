@@ -78,7 +78,7 @@ export default function Footer() {
           </p>
           <a
             className="col-start-5 hover:underline col-span-3 row-start-1 justify-self-end lg:col-start-3 lg:justify-self-start lg:col-span-1"
-            href="#"
+            href="/mentions-legales"
           >
             Mentions légales
           </a>
