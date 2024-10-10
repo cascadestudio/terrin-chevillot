@@ -11,7 +11,7 @@ export default function AboutSection() {
           <img
             src="/triangle.svg"
             alt="Triangle"
-            className="absolute top-0 right-[-1px] rotate-180 h-[18px] md:h-[26px] lg:h-[44px] xl:h-[55px] 2xl:h-[65px]"
+            className="absolute top-[-1px] right-[-1px] rotate-180 h-[18px] md:h-[26px] lg:h-[44px] xl:h-[55px] 2xl:h-[65px]"
           />
           <img
             src="/triangle.svg"

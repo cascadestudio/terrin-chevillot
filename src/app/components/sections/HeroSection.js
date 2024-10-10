@@ -33,7 +33,7 @@ export default function HeroSection() {
           <img
             src="/triangle.svg"
             alt="Triangle"
-            className="absolute bottom-0 left-[-1px] h-[18px] md:h-[26px] lg:h-[44px] xl:h-[55px] 2xl:h-[65px]"
+            className="absolute bottom-[-1px] left-[-1px] h-[18px] md:h-[26px] lg:h-[44px] xl:h-[55px] 2xl:h-[65px]"
           />
         </div>
       </div>
