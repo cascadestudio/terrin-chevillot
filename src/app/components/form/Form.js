@@ -121,7 +121,7 @@ export default function Form() {
         required
       >
         <option value="" disabled>
-          Sélectionnez une fourchette de budget
+          Sélectionnez un budget
         </option>
         <option value="<10k€">Moins de 10 000 €</option>
         <option value="10k€-50k€">10 000 € - 50 000 €</option>
