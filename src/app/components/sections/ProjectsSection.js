@@ -1,4 +1,5 @@
 import { client } from "@/sanity/lib/client";
+import Image from "next/image";
 
 export default async function ProjectsSection() {
   const query = `
@@ -39,9 +40,11 @@ export default async function ProjectsSection() {
           `}
             >
               <div className="relative w-full h-full row-span-2 lg:h-2/3">
-                <img
+                <Image
                   src={project.imageUrl}
                   alt={project.title}
+                  width={960}
+                  height={540}
                   className="w-full h-full object-cover"
                 />
                 <img

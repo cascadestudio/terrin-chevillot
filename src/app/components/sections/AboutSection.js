@@ -1,11 +1,15 @@
+import Image from "next/image";
+
 export default function AboutSection() {
   return (
     <section id="vision" className=" bg-white">
       <div className="container mx-auto px-5 lg:px-0 pt-8 lg:pt-0 grid grid-cols-7 grid-rows-6 lg:bg-grid-pattern bg-[length:calc((100%_-_40px)/7)_16.6667%] lg:bg-[length:14.2857%_16.6667%] bg-[left_1.25rem_top] lg:bg-left-top">
         <div className="relative col-span-7 lg:col-span-3 lg:row-start-2 row-span-3 lg:-ml-[calc((100vw-1024px)/2)] xl:-ml-[calc((100vw-1280px)/2)] 2xl:-ml-[calc((100vw-1536px)/2)]">
-          <img
+          <Image
             src="/about-image.jpg"
             alt="Chantier"
+            width={1920}
+            height={1080}
             className="w-full h-full object-cover"
           />
           <img
