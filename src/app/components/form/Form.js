@@ -76,7 +76,7 @@ export default function Form() {
         placeholder="Nom"
         value={formData.username}
         onChange={handleChange}
-        className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-white focus:outline-none"
+        className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-white focus:outline-none appearance-none rounded-none shadow-none"
         required
       />
       <input
@@ -85,7 +85,7 @@ export default function Form() {
         placeholder="Adresse e-mail"
         value={formData.email}
         onChange={handleChange}
-        className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-white focus:outline-none"
+        className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-white focus:outline-none appearance-none rounded-none shadow-none"
         required
       />
       <input
@@ -94,7 +94,7 @@ export default function Form() {
         placeholder="Numéro de téléphone (optionnel)"
         value={formData.phone}
         onChange={handleChange}
-        className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-white focus:outline-none"
+        className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-white focus:outline-none appearance-none rounded-none shadow-none"
       />
       <select
         name="projectType"
@@ -129,7 +129,7 @@ export default function Form() {
         placeholder="Dites-nous en plus"
         value={formData.message}
         onChange={handleChange}
-        className="w-full h-32 lg:h-48 p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-white focus:outline-none"
+        className="w-full h-32 lg:h-48 p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-white focus:outline-none appearance-none rounded-none shadow-none"
         required
       />
       <button
