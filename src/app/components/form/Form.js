@@ -96,8 +96,10 @@ export default function Form() {
         onChange={handleChange}
         className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-white focus:outline-none appearance-none rounded-none shadow-none"
       />
+
       <select
         name="projectType"
+        aria-label="Type de projet"
         value={formData.projectType}
         onChange={handleChange}
         className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-white focus:outline-none"
@@ -112,6 +114,7 @@ export default function Form() {
       </select>
       <select
         name="budget"
+        aria-label="Budget"
         value={formData.budget}
         onChange={handleChange}
         className={`w-full p-2 mb-4 border-b border-white bg-transparent text-white focus:outline-none`}
