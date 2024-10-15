@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function AboutSection() {
   return (
     <section id="vision" className=" bg-white">
-      <div className="container mx-auto px-5 lg:px-0 pt-8 lg:pt-0 grid grid-cols-7 grid-rows-5 lg:bg-grid-pattern lg:bg-[length:14.2857%_20%] lg:bg-left-top">
+      <div className="container mx-auto px-5 lg:px-0 pt-8 lg:pt-0 grid grid-cols-7 grid-rows-6 lg:grid-rows-5 lg:bg-grid-pattern lg:bg-[length:14.2857%_20%] lg:bg-left-top">
         <div className="relative col-span-7 lg:col-span-3 lg:row-start-2 row-span-3 lg:-ml-[calc((100vw-1024px)/2)] xl:-ml-[calc((100vw-1280px)/2)] 2xl:-ml-[calc((100vw-1536px)/2)]">
           <Image
             src="/about-image.jpg"
