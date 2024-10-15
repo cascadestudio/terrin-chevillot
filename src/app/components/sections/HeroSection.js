@@ -27,7 +27,7 @@ export default function HeroSection() {
         </div>
         <div className="col-start-3 col-span-5 row-span-3 relative -mr-[calc(50vw-70%)]">
           <Image
-            src="/hero-image.png"
+            src="/hero-image.jpg"
             alt="Image chantier"
             width={1920}
             height={1080}
