@@ -7,7 +7,11 @@ export default function HeroSection() {
       <div className="container relative mx-auto px-5 lg:px-0 grid grid-cols-7 grid-rows-6 lg:bg-grid-pattern bg-[length:calc((100%_-_40px)/7)_16.6667%] lg:bg-[length:14.2857%_16.6667%] bg-[left_1.25rem_top] lg:bg-left-top">
         <div className="absolute top-0 left-0 w-[1px] h-full bg-white"></div>
         <div className="col-span-6 row-span-3 bg-blue py-24 lg:py-36 grid grid-cols-subgrid relative -ml-5 pl-5 sm:-ml-[calc(50vw-50%)] sm:pl-[calc(50vw-50%)]">
-          <h1 className="text-white font-black text-[28px] leading-[34px] col-span-5 lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px] lg:col-span-3 lg:col-start-2">
+          <h1
+            class="text-white font-black text-[28px] leading-[34px] col-span-5
+         lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px]
+         2xl:text-[80px] 2xl:leading-[90px] lg:col-span-4 lg:col-start-2 self-center"
+          >
             Rénover, étendre, sublimer : votre espace notre mission
           </h1>
           <img
