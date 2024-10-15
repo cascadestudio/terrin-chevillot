@@ -8,7 +8,7 @@ export default function HeroSection() {
         <div className="absolute top-0 left-0 w-[1px] h-full bg-white"></div>
         <div className="col-span-6 row-span-3 bg-blue py-24 lg:py-36 grid grid-cols-subgrid relative -ml-5 pl-5 sm:-ml-[calc(50vw-50%)] sm:pl-[calc(50vw-50%)]">
           <h1
-            class="text-white font-black text-[28px] leading-[34px] col-span-5
+            className="text-white font-black text-[28px] leading-[34px] col-span-5
          lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px]
          2xl:text-[80px] 2xl:leading-[90px] lg:col-span-4 lg:col-start-2 self-center"
           >
@@ -27,7 +27,7 @@ export default function HeroSection() {
         </div>
         <div className="col-start-3 col-span-5 row-span-3 relative -mr-[calc(50vw-70%)]">
           <Image
-            src="/hero-image.jpg"
+            src="/hero-image.png"
             alt="Image chantier"
             width={1920}
             height={1080}
