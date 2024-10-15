@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default async function ProjectsSection() {
   const query = `
-  *[_type == "project"] | order(orderRank asc)[0...4] {
+  *[_type == "project"] | order(orderRank asc) {
     _id,
     title,
     slug,
@@ -14,38 +14,56 @@ export default async function ProjectsSection() {
 
   const projects = await client.fetch(query);
 
+  const getProjectPosition = (index) => {
+    const colStart = index % 2 === 0 ? "lg:col-start-1" : "lg:col-start-5";
+    const rowStart =
+      index % 2 === 0
+        ? `lg:row-start-${1 + Math.floor(index / 2) * 4}`
+        : `lg:row-start-${2 + Math.floor(index / 2) * 4}`;
+
+    return `${colStart} ${rowStart}`;
+  };
+
+  const gridTotalRows = Math.round(
+    projects.length % 2 === 0
+      ? projects.length * 2 + 3
+      : Math.floor(projects.length * 2) + 4
+  );
+
   return (
     <section id="projects" className="bg-white text-blue">
-      <div className="relative container mx-auto px-5 lg:px-0 pb-10 lg:pb-0 pt-14 lg:pt-0 grid grid-cols-7 grid-rows-14 lg:grid-rows-11 lg:bg-grid-pattern bg-[length:calc((100%_-_40px)/7)_10%] lg:bg-[length:14.2857%_9.1%] bg-[left_1.25rem_top] lg:bg-left-top">
+      <div
+        style={{
+          gridTemplateRows: `repeat(${gridTotalRows}, minmax(0, 1fr))`,
+        }}
+        className={`relative container mx-auto px-5 lg:px-0 pb-10 lg:pb-0 pt-12 lg:pt-0 lg:grid lg:grid-cols-7 lg:bg-grid-pattern lg:bg-[length:14.2857%_${100 / gridTotalRows}%] lg:bg-left-top`}
+      >
         <div className="absolute top-0 left-0 w-[1px] h-full bg-white"></div>
-        <h2 className="bg-white pt-8 border-t border-grey h-full row-start-2 col-span-full lg:col-span-3 font-black uppercase text-[28px] leading-[34px] lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px]">
+        <h2 className="bg-white pt-8 self-end lg:border-t lg:border-grey lg:h-full lg:row-start-2 lg:col-span-3 font-black uppercase text-[28px] leading-[34px] lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px]">
           Réalisations
         </h2>
-        <p className="bg-white mb-8 lg:mb-0 pt-5 lg:pt-8 lg:pl-8 lg:border-l lg:border-t border-grey col-span-full row-start-3 lg:row-start-2 lg:col-span-4 font-black text-blue text-[16px] leading-[22px] lg:text-[22px] lg:leading-[34px]">
+        <p className="bg-white mb-8 lg:mb-0 pt-5 lg:pt-8 lg:pl-8 lg:border-l lg:border-y lg:border-grey lg:row-start-2 lg:col-span-4 font-black text-blue text-[16px] leading-[22px] lg:text-[22px] lg:leading-[34px]">
           Découvrez nos projets de construction et de rénovation. Chaque
           réalisation témoigne de notre expertise et de notre passion pour un
           travail de qualité.
         </p>
 
-        <div className="row-start-4 lg:row-start-3 col-span-full row-span-12 gap-y-8 lg:gap-y-0 lg:row-span-9 grid grid-cols-subgrid lg:grid-rows-subgrid">
+        <div className=" lg:row-start-3 col-span-full lg:gap-y-0 lg:row-span-9 lg:grid lg:grid-cols-subgrid lg:grid-rows-subgrid">
           {projects.map((project, index) => (
             <div
               key={project._id}
               className={`
-            col-span-7 row-span-3 lg:col-span-3 grid lg:block
-            ${index === 0 ? "lg:col-start-1 lg:row-start-1" : ""}
-            ${index === 1 ? "lg:col-start-5 lg:row-start-2" : ""}
-            ${index === 2 ? "lg:col-start-1 lg:row-start-5" : ""}
-            ${index === 3 ? "lg:col-start-5 lg:row-start-6" : ""}
+            mb-8 lg:row-span-3 lg:mb-0 lg:col-span-3 lg:grid lg:grid-rows-subgrid
+            ${getProjectPosition(index)}
           `}
             >
-              <div className="relative w-full h-full row-span-2 lg:h-2/3">
+              <div className="relative w-full h-full lg:row-span-2">
                 <Image
                   src={project.imageUrl}
                   alt={project.title}
                   width={960}
                   height={540}
-                  className="w-full h-full object-cover"
+                  className="w-full h-[230px] lg:h-full object-cover"
                 />
                 <img
                   src="/triangle-project.svg"
@@ -58,7 +76,7 @@ export default async function ProjectsSection() {
                   className="absolute bottom-[-1px] right-[-1px] h-[9px] md:h-[13px] lg:h-[22px] xl:h-[27px] 2xl:h-[32px] transform scale-x-[-1] scale-y-[-1]"
                 />
               </div>
-              <div className="pt-2 lg:pt-4 pb-5 lg:pb-0 row-span-1 bg-white h-full lg:h-1/3 border-b border-grey lg:border-none">
+              <div className="pt-2 lg:pt-4 pb-5 lg:pb-0 lg:row-span-1 bg-white h-1/3">
                 <h3 className=" text-[16px] lg:text-[22px] font-black">
                   {project.title}
                 </h3>
