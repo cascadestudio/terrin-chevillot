@@ -102,7 +102,7 @@ export default function Form() {
         aria-label="Type de projet"
         value={formData.projectType}
         onChange={handleChange}
-        className="w-full p-2 mb-4 border-b border-white bg-transparent text-white placeholder:text-white focus:outline-none"
+        className="w-full p-2 mb-4 border-b bg-blue appearance-none rounded-none shadow-none bg-[url('/arrow-down-mobile.svg')] lg:bg-[url('/arrow-down-desktop.svg')] bg-no-repeat bg-right lg:bg-right-top border-white focus:outline-none"
         required
       >
         <option value="" disabled>
@@ -117,7 +117,7 @@ export default function Form() {
         aria-label="Budget"
         value={formData.budget}
         onChange={handleChange}
-        className={`w-full p-2 mb-4 border-b border-white bg-transparent text-white focus:outline-none`}
+        className={`w-full p-2 mb-4 border-b bg-blue appearance-none rounded-none shadow-none bg-[url('/arrow-down-mobile.svg')] lg:bg-[url('/arrow-down-desktop.svg')] bg-no-repeat bg-right lg:bg-right-top focus:outline-none`}
         required
       >
         <option value="" disabled>
