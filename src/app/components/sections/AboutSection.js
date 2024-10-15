@@ -23,7 +23,7 @@ export default function AboutSection() {
             className="absolute bottom-[-1px] left-[-1px] w-[calc((100vw/7)+15px)] sm:w-[calc((100vw-640px)/2+748px/7)] md:w-[calc((100vw-768px)/2+870px/7)] lg:w-[calc((100vw-1024px)/2+1024px/7)] xl:w-[calc((100vw-1280px)/2+1280px/7)] 2xl:w-[calc((100vw-1536px)/2+1536px/7)]"
           />
         </div>
-        <div className="col-span-7 lg:col-span-4 row-span-2 row-start-1 lg:row-start-3 py-4 lg:py-7 lg:px-10 bg-white border-t border-grey">
+        <div className="col-span-7 lg:col-span-4 row-span-2 row-start-1 lg:row-start-3 py-4 lg:py-7 lg:px-10 bg-white">
           <h2 className="text-blue uppercase font-black text-[28px] leading-[34px] mt-7 lg:mt-0 lg:text-[48px] lg:leading-[55px] xl:text-[63px] xl:leading-[70px]">
             Notre vision
           </h2>
