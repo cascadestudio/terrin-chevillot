@@ -16,25 +16,26 @@ export default async function ProjectsSection() {
 
   const getProjectPosition = (index) => {
     const colStart = index % 2 === 0 ? "lg:col-start-1" : "lg:col-start-5";
+
     const rowStart =
       index % 2 === 0
-        ? `lg:row-start-${1 + Math.floor(index / 2) * 4}`
-        : `lg:row-start-${2 + Math.floor(index / 2) * 4}`;
+        ? 1 + Math.floor(index / 2) * 4
+        : 2 + Math.floor(index / 2) * 4;
 
-    return `${colStart} ${rowStart}`;
+    return { colStart, rowStart };
   };
 
   const gridTotalRows = Math.round(
     projects.length % 2 === 0
-      ? projects.length * 2 + 3
-      : Math.floor(projects.length * 2) + 4
+      ? projects.length * 2
+      : Math.floor(projects.length * 2) + 1
   );
 
   return (
     <section id="projects" className="bg-white text-blue">
       <div
         style={{
-          gridTemplateRows: `repeat(${gridTotalRows}, minmax(0, 1fr))`,
+          gridTemplateRows: `repeat(${gridTotalRows + 3}, minmax(0, 1fr))`,
         }}
         className={`relative container mx-auto px-5 lg:px-0 pb-10 lg:pb-0 pt-12 lg:pt-0 lg:grid lg:grid-cols-7 lg:bg-grid-pattern lg:bg-[length:14.2857%_${100 / gridTotalRows}%] lg:bg-left-top`}
       >
@@ -48,44 +49,50 @@ export default async function ProjectsSection() {
           travail de qualité.
         </p>
 
-        <div className=" lg:row-start-3 col-span-full lg:gap-y-0 lg:row-span-9 lg:grid lg:grid-cols-subgrid lg:grid-rows-subgrid">
-          {projects.map((project, index) => (
-            <div
-              key={project._id}
-              className={`
-            mb-8 lg:row-span-3 lg:mb-0 lg:col-span-3 lg:grid lg:grid-rows-subgrid
-            ${getProjectPosition(index)}
-          `}
-            >
-              <div className="relative w-full h-full lg:row-span-2">
-                <Image
-                  src={project.imageUrl}
-                  alt={project.title}
-                  width={960}
-                  height={540}
-                  className="w-full h-[230px] lg:h-full object-cover"
-                />
-                <img
-                  src="/triangle-project.svg"
-                  alt="Triangle"
-                  className="absolute top-[-1px] left-[-1px] h-[9px] md:h-[13px] lg:h-[22px] xl:h-[27px] 2xl:h-[32px]"
-                />
-                <img
-                  src="/triangle-project.svg"
-                  alt="Triangle"
-                  className="absolute bottom-[-1px] right-[-1px] h-[9px] md:h-[13px] lg:h-[22px] xl:h-[27px] 2xl:h-[32px] transform scale-x-[-1] scale-y-[-1]"
-                />
+        <div
+          className={`lg:row-start-3 col-span-full lg:gap-y-0 lg:row-end-[${gridTotalRows + 3}] lg:grid lg:grid-cols-subgrid lg:grid-rows-subgrid`}
+        >
+          {projects.map((project, index) => {
+            const position = getProjectPosition(index);
+            return (
+              <div
+                key={project._id}
+                className={`mb-8 lg:mb-0 lg:col-span-3 lg:grid ${position.colStart}`}
+                style={{
+                  gridRowStart: position.rowStart,
+                  gridRowEnd: position.rowStart + 3,
+                }}
+              >
+                <div className="relative w-full h-full lg:row-span-2">
+                  <Image
+                    src={project.imageUrl}
+                    alt={project.title}
+                    width={960}
+                    height={540}
+                    className="w-full h-[230px] lg:h-full object-cover"
+                  />
+                  <img
+                    src="/triangle-project.svg"
+                    alt="Triangle"
+                    className="absolute top-[-1px] left-[-1px] h-[9px] md:h-[13px] lg:h-[22px] xl:h-[27px] 2xl:h-[32px]"
+                  />
+                  <img
+                    src="/triangle-project.svg"
+                    alt="Triangle"
+                    className="absolute bottom-[-1px] right-[-1px] h-[9px] md:h-[13px] lg:h-[22px] xl:h-[27px] 2xl:h-[32px] transform scale-x-[-1] scale-y-[-1]"
+                  />
+                </div>
+                <div className="pt-2 lg:pt-4 pb-5 lg:pb-0 lg:row-span-1 bg-white h-1/3">
+                  <h3 className=" text-[16px] lg:text-[22px] font-black">
+                    {project.title}
+                  </h3>
+                  <p className="mt-2 text-[12px] lg:text-[16px] font-bold">
+                    {project.description}
+                  </p>
+                </div>
               </div>
-              <div className="pt-2 lg:pt-4 pb-5 lg:pb-0 lg:row-span-1 bg-white h-1/3">
-                <h3 className=" text-[16px] lg:text-[22px] font-black">
-                  {project.title}
-                </h3>
-                <p className="mt-2 text-[12px] lg:text-[16px] font-bold">
-                  {project.description}
-                </p>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
