@@ -1,7 +1,7 @@
 import { client } from "@/sanity/lib/client";
 import Image from "next/image";
 
-// export const fetchCache = "force-no-store";
+export const fetchCache = "force-no-store";
 
 export default async function ProjectsSection() {
   const query = `
