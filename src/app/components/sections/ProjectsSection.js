@@ -1,6 +1,8 @@
 import { client } from "@/sanity/lib/client";
 import Image from "next/image";
 
+// export const fetchCache = "force-no-store";
+
 export default async function ProjectsSection() {
   const query = `
   *[_type == "project"] | order(orderRank asc) {
@@ -12,7 +14,7 @@ export default async function ProjectsSection() {
   }
   `;
 
-  const projects = await client.fetch(query);
+  const projects = await client.fetch(query, { cache: "no-store" });
 
   const getProjectPosition = (index) => {
     const colStart = index % 2 === 0 ? "lg:col-start-1" : "lg:col-start-5";
