@@ -10,7 +10,7 @@ export default function ServicesSection() {
 
   const services = [
     {
-      title: "Construction et Rénovation",
+      title: "Construction\net Rénovation",
       content:
         "La mise en œuvre de votre chantier est assurée par une équipe d’experts réactifs et professionnels. Que ce soit pour des extensions, des rénovations ou une construction neuve nous utilisons les meilleurs matériaux et allions techniques traditionnelles et innovantes pour une réalisation parfaite.\nNous bâtissons durablement et éthiquement, dans les règles de l’art depuis plus de 20 ans.",
     },
