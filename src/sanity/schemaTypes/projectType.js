@@ -13,11 +13,13 @@ export const projectType = defineType({
   fields: [
     defineField({
       name: "title",
+      title: "Titre",
       type: "string",
       validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "mainImage",
+      title: "Image",
       type: "image",
       options: {
         hotspot: true,
