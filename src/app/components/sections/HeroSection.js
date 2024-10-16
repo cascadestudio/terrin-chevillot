@@ -32,6 +32,7 @@ export default function HeroSection() {
             width={1920}
             height={1080}
             priority={true}
+            quality={100}
             className="w-full h-full max-h-full object-cover"
           />
           <img

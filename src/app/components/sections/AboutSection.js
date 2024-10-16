@@ -11,6 +11,7 @@ export default function AboutSection() {
             width={1920}
             height={1080}
             className="w-full h-full object-cover"
+            quality={100}
           />
           <img
             src="/triangle.svg"
