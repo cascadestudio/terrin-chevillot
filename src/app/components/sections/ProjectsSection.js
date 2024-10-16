@@ -89,7 +89,7 @@ export default async function ProjectsSection() {
                     className="absolute bottom-[-1px] right-[-1px] h-[9px] md:h-[13px] lg:h-[22px] xl:h-[27px] 2xl:h-[32px] transform scale-x-[-1] scale-y-[-1]"
                   />
                 </div>
-                <div className="pt-2 lg:pt-4 pb-5 lg:pb-0  lg:pl-3 lg:row-span-1 bg-white lg:border-l lg:border-grey">
+                <div className="pt-2 lg:pt-4 pb-5 lg:pb-0  lg:px-3 lg:row-span-1 bg-white lg:border-l lg:border-grey">
                   <h3 className=" text-[16px] lg:text-[22px] font-black">
                     {project.title}
                   </h3>
