@@ -10,7 +10,7 @@ export async function POST(req) {
 
     const { data, error } = await resend.emails.send({
       from: "Formulaire Site TC <onboarding@resend.dev>",
-      to: ["contact@cascadestudio.fr"],
+      to: ["contact@terrin-chevillot.com"],
       subject: `Nouvelle demande de devis sur votre site : ${username}`,
       react: EmailTemplate({
         username,
