@@ -9,7 +9,7 @@ export async function POST(req) {
       await req.json();
 
     const { data, error } = await resend.emails.send({
-      from: "Contact Site TC <contact@terrin-chevillot.com>",
+      from: "Contact Site TC <onboarding@resend.dev>",
       to: ["contact@terrin-chevillot.com"],
       subject: `Nouvelle demande de devis sur votre site : ${username}`,
       react: EmailTemplate({
