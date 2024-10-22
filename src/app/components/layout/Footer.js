@@ -18,11 +18,11 @@ export default function Footer() {
             Nous contacter
           </h2>
           <a
-            href="mailto:terrin.chevillot@gmail.com"
+            href="mailto:contact@terrin-chevillot.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            terrin.chevillot@gmail.com
+            contact@terrin-chevillot.com
             <img
               src="/link-icon.svg"
               alt="Mail"
