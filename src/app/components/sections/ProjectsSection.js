@@ -68,6 +68,7 @@ export default async function ProjectsSection() {
                   gridColumnStart: position.colStart,
                   gridRowStart: position.rowStart,
                   gridRowEnd: position.rowStart + 3,
+                  maxHeight: "min(calc(100vh - 200px), 600px)",
                 }}
               >
                 <div className="relative w-full h-full lg:row-span-2">

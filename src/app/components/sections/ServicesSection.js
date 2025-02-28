@@ -12,17 +12,17 @@ export default function ServicesSection() {
     {
       title: "Construction\net Rénovation",
       content:
-        "La mise en œuvre de votre chantier est assurée par une équipe d’experts réactifs et professionnels. Que ce soit pour des extensions, des rénovations ou une construction neuve nous utilisons les meilleurs matériaux et allions techniques traditionnelles et innovantes pour une réalisation parfaite.\nNous bâtissons durablement et éthiquement, dans les règles de l’art depuis plus de 20 ans.",
+        "La mise en œuvre de votre chantier est assurée par une équipe d'experts réactifs et professionnels. Que ce soit pour des extensions, des rénovations ou une construction neuve nous utilisons les meilleurs matériaux et allions techniques traditionnelles et innovantes pour une réalisation parfaite.\nNous bâtissons durablement et éthiquement, dans les règles de l'art depuis plus de 20 ans.",
     },
     {
       title: "Typologie",
       content:
-        "Vous souhaitez rafraîchir votre maison, donner un coup de neuf à votre commerce ou redonner vie à un espace public, nous sommes là pour vous accompagner.\nGrâce à notre vaste expérience avec les architectes et les bureaux d’études, nous suivons les plans à la lettre. Notre équipe hautement qualifiée est là pour vous écouter et vous conseiller à chaque étape.",
+        "Vous souhaitez rafraîchir votre maison, donner un coup de neuf à votre commerce ou redonner vie à un espace public, nous sommes là pour vous accompagner.\nGrâce à notre vaste expérience avec les architectes et les bureaux d'études, nous suivons les plans à la lettre. Notre équipe hautement qualifiée est là pour vous écouter et vous conseiller à chaque étape.",
     },
     {
       title: "Coordination",
       content:
-        "Notre équipe assure une coordination fluide entre les différents corps de métier. La coordination est cruciale pour le bon déroulement d’un chantier, et grâce à notre expérience, nous nous adaptons parfaitement, même aux délais les plus ambitieux.",
+        "Notre équipe assure une coordination fluide entre les différents corps de métier. La coordination est cruciale pour le bon déroulement d'un chantier, et grâce à notre expérience, nous nous adaptons parfaitement, même aux délais les plus ambitieux.",
     },
     {
       title: "Particulier",
@@ -47,7 +47,7 @@ export default function ServicesSection() {
         {services.map((service, index) => (
           <button
             key={index}
-            className={`lg:col-start-2 col-span-7 lg:col-span-6 grid grid-cols-subgrid py-5 border-t border-white text-left  ${
+            className={`lg:col-start-2 col-span-7 lg:col-span-6 grid grid-cols-subgrid py-5 border-t border-white text-left ${
               index === services.length - 1 ? "border-b border-white" : ""
             }`}
             onClick={() => toggleAccordion(index)}
@@ -60,7 +60,9 @@ export default function ServicesSection() {
             </h2>
             <div
               className={`col-start-2 col-span-6 lg:col-start-4 lg:col-span-3 whitespace-pre-line text-[16px] leading-[22px] lg:text-[22px] lg:leading-[34px] font-bold overflow-hidden transition-[max-height] duration-500 ease-in-out ${
-                openAccordionIndex === index ? "max-h-[550px]" : "max-h-0"
+                openAccordionIndex === index
+                  ? "max-h-[550px] lg:max-h-[400px]"
+                  : "max-h-0"
               }`}
             >
               <p>{service.content}</p>

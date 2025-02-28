@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function AboutSection() {
   return (
     <section id="vision" className=" bg-white">
-      <div className="container mx-auto px-5 lg:px-0 pt-8 lg:pt-0 grid grid-cols-7 grid-rows-6 lg:grid-rows-5 lg:bg-grid-pattern lg:bg-[length:14.2857%_20%] lg:bg-left-top">
+      <div className="container mx-auto px-5 lg:px-0 pt-8 lg:pt-0 grid grid-cols-7 grid-rows-6 lg:grid-rows-5 lg:bg-grid-pattern lg:bg-[length:14.2857%_20%] lg:bg-left-top max-h-screen lg:max-h-[700px] xl:max-h-[800px] 2xl:max-h-[900px]">
         <div className="lg:p-[1.5px] col-span-7 lg:col-span-3 lg:row-start-2 row-span-3 lg:-ml-[calc((100vw-1024px)/2)] xl:-ml-[calc((100vw-1280px)/2)] 2xl:-ml-[calc((100vw-1536px)/2)]">
           <div className="relative">
             <Image
@@ -31,7 +31,7 @@ export default function AboutSection() {
             Notre vision
           </h2>
           <p className="mt-4 text-blue text-[16px] lg:text-[22px] font-bold">
-            Forts de plus de 20 ans d’expérience en construction et en
+            Forts de plus de 20 ans d'expérience en construction et en
             rénovation, nous orchestrons notre savoir-faire méticuleux et une
             coordination fluide.
             <br />
